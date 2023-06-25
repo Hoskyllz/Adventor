@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Footer.css";
-import line from "../assets/line.png";
 import facebook from "../assets/facebook.png";
 import twitter from "../assets/twitter.png";
 import insta from "../assets/insta.png";
