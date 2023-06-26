@@ -4,6 +4,8 @@ import Banner from './components/Banner'
 import Footer from './components/Footer'
 import Section1 from './components/Section1'
 import Testimonial from './components/Testimonial'
+import Section2 from './components/Section2'
+
 
 function App() {
   
@@ -11,8 +13,11 @@ function App() {
   return (
     <>
       <Banner />
-      <Section1 />
-      <Testimonial/>
+      <div className="submain">
+       <Section1 />
+        <Section2 />
+      </div>
+     <Testimonial/>
       <Footer />
       
     </>
