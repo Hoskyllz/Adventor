@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const Adventure = ({id,image,info,title}) => {
+const Adventure = ({ id, image, info, title, removeAdventure }) => {
+    const [readMore, setReadMore] = useState(true)
+    const toggleRead = () => {
+        setReadMore(!readMore)
+    }
   return (
       <div className='maincard'>
           <img src={image} alt={title} className='photo' />
@@ -10,11 +14,11 @@ const Adventure = ({id,image,info,title}) => {
                   <p>icons</p>
               </div>
               <p className="adventure-text">
-                  {info}
-                  <button>Read more</button>
+                  {readMore ? `${info.substring(0,50)}...`:info}
+                  <button onClick={toggleRead}>{readMore?  "Read More" : "Show less" }</button>
               </p>
           </article>
-          <button className="notbtn">Not Interested</button>
+          <button onClick={()=> removeAdventure (id)} className="notbtn">Not Interested</button>
     </div>
   )
 }
