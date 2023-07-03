@@ -1,33 +1,44 @@
 section .two{
+    /* border: 2px solid green; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 10%;
+    
 }
 .Making{
-    background-color: #effcf1;
+    position: relative;
+    left: 70px;
     text-align: start;
     align-items: center;
     width: 617px;
-    height: 408px;
-    
-
-    
+    height: 500px; 
+    /* border: 2px solid blue;    */
 }
 .Makingchild{
-    
     align-items: center;
-    margin: 25% 5%;
+    margin: 16% 5%;
     line-height: 3vh;
+    justify-items: center;
+    /* border: 2px solid red; */
+    background-color: #effcf1;
+    position: relative;
+    bottom: 15%;
+    left: 5px;
 }
 .Makingchild hr{
     background-color: #22CDFF;
     margin: 10px;
     width: 20%;
-    color: #22CDFF;
+    height: 3px;
+    border: none;
+
 }
 .Makingchild h3{
     font-family: var(--palanquin);
     font-weight: 400;
+    font-size: x-large;
+    line-height: 5vh;
 }
 .Makingchild p{
     font-family: var(--jost);
@@ -35,7 +46,52 @@ section .two{
     line-height: 27px;
 }
 .picture img{
-        width: 100%;
+        width: 90%;
         height: 300px;
+        position: relative;
+        top: 20%;
+        right: 80px;
+
+}
+
+@media(max-width:768px){
+    .picture img {
+            width: 100%;
+            height: 300px;
+            position: none;
+            top: 0%;
+            right: 0px;
+    }
+        .Making {
+            position: relative;
+            left: 0px;
+            width: 100%;
+            height: 400px;
+            /* border: 2px solid blue;    */
+        }
+
+}
+@media(max-width:1024px){
+        .picture img {
+                width: 100%;
+                height: 300px;
+                position: none;
+                top: 0%;
+                right: 0px;
+            }
+        
+            .Making {
+                position: none;
+                left: 0px;
+                width: 100%;
+                height: 400px;
+                padding-bottom: -15px;
+            
+            }
+            .Makingchild{
+                text-align: center;
+            }
+            .Makingchild hr {
+            margin-left: 40%;}
 
 }

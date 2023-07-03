@@ -15,10 +15,10 @@ const Section2 = () => {
               <hr />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor
-                cursus tortor tempus ac. Purus amet risus amet sagittis. Enim
-                nulla a sapien lectus tellus mauris integer ut. Magna viverra
-                sit rhoncus convallis id. Aenean egestas turpis aenean feugiat
-                pharetra sed sed morbi faucibus.
+                cursus <br /> tortor tempus ac. Purus amet risus amet sagittis. Enim
+                nulla a sapien <br /> lectus tellus mauris integer ut. Magna viverra
+                sit rhoncus convallis id. <br /> Aenean egestas turpis aenean feugiat
+                pharetra sed sed morbi <br /> faucibus.
               </p>
             </div>
           </div>

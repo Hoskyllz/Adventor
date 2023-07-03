@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import {BsStarFill,BsStar} from "react-icons/bs"
 
 const Adventure = ({ id, image, info, title, removeAdventure }) => {
     const [readMore, setReadMore] = useState(true)
@@ -11,7 +12,7 @@ const Adventure = ({ id, image, info, title, removeAdventure }) => {
           <article>
               <div className="title-icon">
                   <h5> {title} </h5>
-                  <p>icons</p>
+                  <p className='star'><BsStarFill/><BsStarFill/><BsStarFill/><BsStar/><BsStar/></p>
               </div>
               <p className="adventure-text">
                   {readMore ? `${info.substring(0,50)}...`:info}
